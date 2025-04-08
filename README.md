@@ -88,8 +88,8 @@ Whether you're preparing for data engineering interviews, exploring the AWS ecos
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/crypto-data-pipeline.git
-cd crypto-data-pipeline
+git clone https://github.com/Ridhic/crypto_pipeline.git
+cd crypto_pipeline
 ```
 
 2. **Configure Environment Variables**
@@ -136,21 +136,8 @@ docker-compose up -d
 6. (Optional) Visualize Insights in Metabase
 
     - Access the Metabase UI at `http://localhost:3000`
-	- Connect it to your PostgreSQL container
-	- Explore dashboards and charts included with the project
-
-## Final Dashboard
-
-The Metabase dashboard displays the following visualizations:
-
-1. Bar chart: Top 10 Cryptos by Market Cap
-2. Scatter plot: Price vs Market Cap
-3. Line chart: Top 5 Cryptos by Price
-4. Pie chart: Market Cap Share
-
-The dashboard provides a clear view of the most dominant cryptocurrencies and how they relate in terms of price and market value.
-
-![Metabase Dashboard](metabase/dashboard_screenshot.png)
+    - You can connect to the `crypto_filtered` table in PostgreSQL and build custom dashboards to track top cryptocurrencies, market cap trends, etc.
+    - Explore dashboards and charts included with the project
 
 ## Learning Outcomes
 
