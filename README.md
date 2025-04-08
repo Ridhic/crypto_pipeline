@@ -97,11 +97,14 @@ cd crypto-data-pipeline
 	Create a `.env` file in the root of the project with the following content:
 
 ```env
-POSTGRES_USER=your_user
-POSTGRES_PASSWORD=your_password
-POSTGRES_DB=crypto_db
+AWS_ACCESS_KEY_ID=***
+AWS_SECRET_ACCESS_KEY=***
+S3_BUCKET_NAME=***
+POSTGRES_HOST=***
+POSTGRES_DB=***
+POSTGRES_USER=***
+POSTGRES_PASSWORD=***
 POSTGRES_PORT=5432
-POSTGRES_HOST=host.docker.internal  # or 172.17.0.1 on Linux
 
 API_URL=https://api.coingecko.com/api/v3/coins/markets
 API_PARAMS=?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false
